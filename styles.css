@@ -14,11 +14,7 @@ p {
 
 footer {
   text-align: center;
-  padding-top: 5%;
-}
-
-.card {
-  display: none;
+  padding-top: 15%;
 }
 
 .card,
@@ -30,6 +26,10 @@ footer {
 
 .movieImg {
   width: 25%;
+}
+
+#accordionGroup {
+  display: none;
 }
 
 #enterButton {
@@ -50,7 +50,7 @@ footer {
 }
 
 #heroImg {
-  height: 100vh;
+  height: 98vh;
   width: 98%;
   position: absolute;
   filter: blur(3px);

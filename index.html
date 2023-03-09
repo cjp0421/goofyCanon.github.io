@@ -19,6 +19,7 @@
 
     <script>
       function seeList() {
+        let collaspedMovieLists = document.getElementById("accordionGroup");
         let hideHeroImg = document.getElementById("heroImg");
         let hideIntroParagraph = document.getElementById("heroCallOut");
         let seeListButton = document.getElementById("enterButton");
@@ -38,6 +39,8 @@
         seeListButton.style = "display:none";
         introductionParagraphs.style.cssText =
           "display:block;position:relative;top:8vh;";
+        collaspedMovieLists.style.cssText =
+          "display:block; position: relative; top: 10vh";
       }
     </script>
   </head>
@@ -114,316 +117,271 @@
           goofing movies, click on a Goof Level from the options below.
         </p>
       </div>
-      <div>
-        <div id="accordion">
-          <div class="card bg-dark">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link bg-dark text-white"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Goof Level - 1
-                </button>
-              </h5>
+
+      <div id="accordionGroup">
+        <div>
+          <div id="accordion">
+            <div class="card bg-dark">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link bg-dark text-white"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Goof Level - 1
+                  </button>
+                </h5>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div
-          id="collapseOne"
-          class="collapse"
-          aria-labelledby="headingOne"
-          data-parent="#accordion"
-        >
-          <div id="card1" class="card-body bg-dark">
-            <div id="goofLevel1Div" class="goofLevelDiv">
-              <h2>Session 9</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://thewolfmancometh.files.wordpress.com/2013/03/session-9-nine-movie-poster-2001.jpg"
-              />
-              <p id="session9DirectorWriter" class="movieInfo">
-                Directed by Brad Anderson, written by Brad Anderson and Stephen
-                Gevedon (2001)
-              </p>
-              <p id="session9Synopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: An asbestos removal crew,
-                led by a VERY stressed-out boss, commits to an impossible
-                timeline when cleaning up an decrepit, abandoned mental
-                institution with a dark history.
-              </p>
-
-              <h2>Hereditary</h2>
-              <img
-                class="movieImg"
-                src="https://images-na.ssl-images-amazon.com/images/S/aiv-image/jp/a561f743-912f-4ef3-b514-2a8931373ad9-18f5bdb4-4e6a-4857-ba28-4a6104fd7fd0_RGB_SD._RI_Va8cba76ca6f82afb370719d5adefedcb_TTW_.jpg"
-              />
-              <p id="hereditaryDirectorWriter" class="movieInfo">
-                Directed and Written by Ari Aster (2018)
-              </p>
-              <p id="hereditarySynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A seemingly typical
-                suburban family's darkness pours out of the cracks when a
-                tragedy takes away the odd-duck youngest child.
-              </p>
-              <h2>Midsommar</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://www.assignmentx.com/wp-content/uploads/2019/06/MIDSOMMAR-movie-poster.jpg"
-              />
-
-              <p id="midsommarDirectorWriter" class="movieInfo">
-                Directed and Written by Ari Aster (2019)
-              </p>
-              <p id="midsommarSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A young woman, in the wake
-                of a horrible tragedy, takes her dysfunctional relationship on a
-                trip to a commune in Scandanavia so that her boyfriend and his
-                friends can do research - and drugs.
-              </p>
-              <p id="" class=""></p>
-              <h2>The Northman</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://cityofgeekcom.files.wordpress.com/2022/04/northman-poster.jpg"
-              />
-
-              <p id="northmanDirectorWriter" class="movieInfo">
-                Directed by Robert Eggers, Written by Sjón (2022)
-              </p>
-              <p id="northmanSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A Viking prince gets bloody
-                revenge for the theft of his birthright.
-              </p>
-              <p id="northmanBonusFact" class="movieTrivia">
-                20 Points if you know which Shakespeare play shares this
-                plot!<br /><em>Points have no value and are meaningless.</em>
-              </p>
-
-              <h2>Hour of the Wolf</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/4/2018/08/27162310/HouroftheWolf-poster.jpg"
-              />
-
-              <p id="hourWolfDirectorWriter" class="movieInfo">
-                Directed and Written by Ingmar Bergman (1968)
-              </p>
-              <p id="hourWolfSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: While on holiday at the
-                bleakest beach on Earth, an artist and his wife live out a
-                Freudian nightmare when clothing - and sanity - become optional.
-              </p>
-              <p id="" class=""></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="card2" class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button
-              id="button2"
-              class="btn btn-link collapsed text-white"
-              data-toggle="collapse"
-              data-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Goof Level - 2
-            </button>
-          </h5>
-        </div>
-        <div
-          id="collapseTwo"
-          class="collapse"
-          aria-labelledby="headingTwo"
-          data-parent="#accordion"
-        >
-          <div class="card-body">
-            <div id="goofLevel2Div" class="goofLevelDiv">
-              <h2>Alien</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://i.pinimg.com/originals/fd/82/c1/fd82c1116eb734b625552241e00e2a20.png"
-              />
-
-              <p id="alienDirectorWriter" class="movieInfo">
-                Directed by Ridley Scott, Written by Dan O'Bannon, Based on a
-                Story by Ronald Shusett (1979)
-              </p>
-              <p id="alienSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A long-haul spaceship
-                salvage crew is awoken from cryosleep early to investigate a
-                mysterious distress signal of unknown origin.
-              </p>
-              <p id="" class=""></p>
-              <p id="" class=""></p>
-              <h2>Prey</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://carnivorouslreviews.files.wordpress.com/2022/08/prey_poster.jpg?w=1382"
-              />
-
-              <p id=" DirectorWriter" class="movieInfo">
-                Directed by Dan Trachtenberg, Written by Patrick Aison, Dan
-                Trachtenberg, Jim Thomas (2022)
-              </p>
-              <p id="preySynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A young Comanche woman
-                kicks ass while contending with sexist expectations, European
-                invaders, Mother Nature, and a super-soldier Predator from outer
-                space.
-              </p>
-              <p id="preyBonusFact" class="movieTrivia">
-                <em
-                  >Note: Although the Goof level of the rest of the Predator
-                  franchise is somewhere between 4 and 5, the stunning
-                  cinematography, quality acting, and complex characters really
-                  skewed the series' Goof average with this entry.</em
-                >
-              </p>
-              <h2>The Long Goodbye</h2>
-              <img
-                id="session9Cover"
-                class="movieImg"
-                src="https://th.bing.com/th/id/R.0083b5dc99153642c250a51479a559dc?rik=Y%2fOChUR24F9Xpw&riu=http%3a%2f%2fstatic.rogerebert.com%2fuploads%2fmovie%2fmovie_poster%2fthe-long-goodbye-1973%2flarge_oebPYg9XjHjsGzjWwrM8fuHkHOU.jpg&ehk=DsTDMV2w3Y5wEe5f%2blGKBqkq271lEykfJsYzACFcb88%3d&risl=&pid=ImgRaw&r=0"
-              />
-
-              <p id="longGoodbyeDirectorWriter" class="movieInfo">
-                Directed by Robert Altman, written by Leigh Brackett, based on a
-                Novel by Raymond Chandler (1973)
-              </p>
-              <p id="longGoodbyeSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A private investigator does
-                a friend a favor only to find himself dodging questions from
-                both sides of the law about a series of murders and suicides -
-                and a lot of missing money.
-              </p>
-              <p id="longGoodbyWhyGoof" class="whyGoofRating"></p>
-              <p id="" class=""></p>
-              <h2>Volver</h2>
-              <img
-                id=" Img"
-                class="movieImg"
-                src="https://th.bing.com/th/id/R.637f5a18ddf128ec8724e503d2a5bc11?rik=eTM1zqvnDGkUBg&riu=http%3a%2f%2fmovieposters.2038.net%2fp%2fVolver_8.jpg&ehk=qi8XxWePdEynvrqjh8PGBUVmZ7ts8oir6Sa2hkxJyRY%3d&risl=&pid=ImgRaw&r=0"
-              />
-
-              <p id="volverDirectorWriter" class="movieInfo">
-                Directed and Written by Pedro Almodóvar (2006)
-              </p>
-              <p id="volverSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: Three generations of women
-                in a Spanish family, including a recently deceased ghost,
-                grapple with the rammifications of familial tragedies great and
-                small.
-              </p>
-              <p id="" class=""></p>
-              <p id="" class=""></p>
-              <h2>Poupoupidou</h2>
-              <img
-                id=" Img"
-                class="movieImg"
-                src="https://media-cache.cinematerial.com/p/500x/7ixp1sii/poupoupidou-belgian-movie-poster.jpg?v=1456630031"
-              />
-              <p id="pouPouDirectorWriter" class="movieInfo">
-                Directed by Gérald Hustache-Mathieu, Written by Gérald
-                Hustache-Mathieu and Juliette Sales, based on a Novel by Adrian
-                Finkelstein (2011)
-              </p>
-              <p id="pouPouSynopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A crime writer investigates
-                the suicide of a model who believed she was the reincarnation of
-                Marilyn Monroe.
-              </p>
-
-              <p id="" class=""></p>
-              <h2>A Promising Young Woman</h2>
-              <img
-                id=" Img"
-                class="movieImg"
-                src="https://imagesyoulike.com/images/300000/32x24/360468.jpg"
-              />
-              <p id=" DirectorWriter" class="movieInfo">
-                Directed and Written by Emerald Fennell (2020)
-              </p>
-              <p id=" Synopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers: A 30-something, college
-                drop-out fixated on exposing predatory sexual behavior and the
-                hypocrasy it's cloaked in, exacts vigilante justice on the
-                perpetrators of a horrible sex crime.
-              </p>
-
-              <p id="" class=""></p>
-              <h2>Candyman</h2>
-              <img
-                id=" Img"
-                class="movieImg"
-                src="https://th.bing.com/th/id/OIP.BhBvkcbAkuoumDq6UfmuPQHaK_?w=186&h=276&c=7&r=0&o=5&pid=1.7"
-              />
-              <img
-                id=" Img"
-                class="movieImg"
-                src="https://th.bing.com/th/id/OIP.NE8m9Io4fJYNdVe_f2cO2QHaKe?w=186&h=263&c=7&r=0&o=5&pid=1.7"
-              />
-              <p id=" DirectorWriter" class="movieInfo">
-                Directed and Written by Pedro Almodóvar (2006)
-              </p>
-              <p id=" Synopsis" class="movieSummary">
-                One Sentence Synopsis Sans Spoilers:
-              </p>
-
-              <p id="" class=""></p>
-              <h3></h3>
-              <p id="" class=""></p>
-              <h3></h3>
-              <p id="" class=""></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="accordion">
-        <div id="card3" class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button
-                id="button3"
-                class="btn btn-link text-white"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="true"
-                aria-controls="collapseThree"
-              >
-                Goof Level - 3
-              </button>
-            </h5>
           </div>
 
           <div
-            id="collapseThree"
+            id="collapseOne"
             class="collapse"
-            aria-labelledby="headingThree"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div id="card1" class="card-body bg-dark">
+              <div id="goofLevel1Div" class="goofLevelDiv">
+                <h2>Session 9</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://thewolfmancometh.files.wordpress.com/2013/03/session-9-nine-movie-poster-2001.jpg"
+                />
+                <p id="session9DirectorWriter" class="movieInfo">
+                  Directed by Brad Anderson, written by Brad Anderson and
+                  Stephen Gevedon (2001)
+                </p>
+                <p id="session9Synopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: An asbestos removal crew,
+                  led by a VERY stressed-out boss, commits to an impossible
+                  timeline when cleaning up an decrepit, abandoned mental
+                  institution with a dark history.
+                </p>
+
+                <h2>Hereditary</h2>
+                <img
+                  class="movieImg"
+                  src="https://images-na.ssl-images-amazon.com/images/S/aiv-image/jp/a561f743-912f-4ef3-b514-2a8931373ad9-18f5bdb4-4e6a-4857-ba28-4a6104fd7fd0_RGB_SD._RI_Va8cba76ca6f82afb370719d5adefedcb_TTW_.jpg"
+                />
+                <p id="hereditaryDirectorWriter" class="movieInfo">
+                  Directed and Written by Ari Aster (2018)
+                </p>
+                <p id="hereditarySynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A seemingly typical
+                  suburban family's darkness pours out of the cracks when a
+                  tragedy takes away the odd-duck youngest child.
+                </p>
+                <h2>Midsommar</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://www.assignmentx.com/wp-content/uploads/2019/06/MIDSOMMAR-movie-poster.jpg"
+                />
+
+                <p id="midsommarDirectorWriter" class="movieInfo">
+                  Directed and Written by Ari Aster (2019)
+                </p>
+                <p id="midsommarSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A young woman, in the
+                  wake of a horrible tragedy, takes her dysfunctional
+                  relationship on a trip to a commune in Scandanavia so that her
+                  boyfriend and his friends can do research - and drugs.
+                </p>
+                <p id="" class=""></p>
+                <h2>The Northman</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://cityofgeekcom.files.wordpress.com/2022/04/northman-poster.jpg"
+                />
+
+                <p id="northmanDirectorWriter" class="movieInfo">
+                  Directed by Robert Eggers, Written by Sjón (2022)
+                </p>
+                <p id="northmanSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A Viking prince gets
+                  bloody revenge for the theft of his birthright.
+                </p>
+                <p id="northmanBonusFact" class="movieTrivia">
+                  20 Points if you know which Shakespeare play shares this
+                  plot!<br /><em>Points have no value and are meaningless.</em>
+                </p>
+
+                <h2>Hour of the Wolf</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/4/2018/08/27162310/HouroftheWolf-poster.jpg"
+                />
+
+                <p id="hourWolfDirectorWriter" class="movieInfo">
+                  Directed and Written by Ingmar Bergman (1968)
+                </p>
+                <p id="hourWolfSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: While on holiday at the
+                  bleakest beach on Earth, an artist and his wife live out a
+                  Freudian nightmare when clothing - and sanity - become
+                  optional.
+                </p>
+                <p id="" class=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card2" class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                id="button2"
+                class="btn btn-link collapsed text-white"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Goof Level - 2
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
             data-parent="#accordion"
           >
             <div class="card-body">
-              <div id="goofLevel3Div" class="goofLevelDiv">
-                <h2>Teeth</h2>
+              <div id="goofLevel2Div" class="goofLevelDiv">
+                <h2>Alien</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://i.pinimg.com/originals/fd/82/c1/fd82c1116eb734b625552241e00e2a20.png"
+                />
+
+                <p id="alienDirectorWriter" class="movieInfo">
+                  Directed by Ridley Scott, Written by Dan O'Bannon, Based on a
+                  Story by Ronald Shusett (1979)
+                </p>
+                <p id="alienSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A long-haul spaceship
+                  salvage crew is awoken from cryosleep early to investigate a
+                  mysterious distress signal of unknown origin.
+                </p>
+                <p id="" class=""></p>
+                <p id="" class=""></p>
+                <h2>Prey</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://carnivorouslreviews.files.wordpress.com/2022/08/prey_poster.jpg?w=1382"
+                />
+
+                <p id=" DirectorWriter" class="movieInfo">
+                  Directed by Dan Trachtenberg, Written by Patrick Aison, Dan
+                  Trachtenberg, Jim Thomas (2022)
+                </p>
+                <p id="preySynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A young Comanche woman
+                  kicks ass while contending with sexist expectations, European
+                  invaders, Mother Nature, and a super-soldier Predator from
+                  outer space.
+                </p>
+                <p id="preyBonusFact" class="movieTrivia">
+                  <em
+                    >Note: Although the Goof level of the rest of the Predator
+                    franchise is somewhere between 4 and 5, the stunning
+                    cinematography, quality acting, and complex characters
+                    really skewed the series' Goof average with this entry.</em
+                  >
+                </p>
+                <h2>The Long Goodbye</h2>
+                <img
+                  id="session9Cover"
+                  class="movieImg"
+                  src="https://th.bing.com/th/id/R.0083b5dc99153642c250a51479a559dc?rik=Y%2fOChUR24F9Xpw&riu=http%3a%2f%2fstatic.rogerebert.com%2fuploads%2fmovie%2fmovie_poster%2fthe-long-goodbye-1973%2flarge_oebPYg9XjHjsGzjWwrM8fuHkHOU.jpg&ehk=DsTDMV2w3Y5wEe5f%2blGKBqkq271lEykfJsYzACFcb88%3d&risl=&pid=ImgRaw&r=0"
+                />
+
+                <p id="longGoodbyeDirectorWriter" class="movieInfo">
+                  Directed by Robert Altman, written by Leigh Brackett, based on
+                  a Novel by Raymond Chandler (1973)
+                </p>
+                <p id="longGoodbyeSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A private investigator
+                  does a friend a favor only to find himself dodging questions
+                  from both sides of the law about a series of murders and
+                  suicides - and a lot of missing money.
+                </p>
+                <p id="longGoodbyWhyGoof" class="whyGoofRating"></p>
+                <p id="" class=""></p>
+                <h2>Volver</h2>
                 <img
                   id=" Img"
                   class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.B8UtGpqeSJNPptbPL-c8oAHaJ4?w=128&h=180&c=7&r=0&o=5&pid=1.7"
+                  src="https://th.bing.com/th/id/R.637f5a18ddf128ec8724e503d2a5bc11?rik=eTM1zqvnDGkUBg&riu=http%3a%2f%2fmovieposters.2038.net%2fp%2fVolver_8.jpg&ehk=qi8XxWePdEynvrqjh8PGBUVmZ7ts8oir6Sa2hkxJyRY%3d&risl=&pid=ImgRaw&r=0"
+                />
+
+                <p id="volverDirectorWriter" class="movieInfo">
+                  Directed and Written by Pedro Almodóvar (2006)
+                </p>
+                <p id="volverSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: Three generations of
+                  women in a Spanish family, including a recently deceased
+                  ghost, grapple with the rammifications of familial tragedies
+                  great and small.
+                </p>
+                <p id="" class=""></p>
+                <p id="" class=""></p>
+                <h2>Poupoupidou</h2>
+                <img
+                  id=" Img"
+                  class="movieImg"
+                  src="https://media-cache.cinematerial.com/p/500x/7ixp1sii/poupoupidou-belgian-movie-poster.jpg?v=1456630031"
+                />
+                <p id="pouPouDirectorWriter" class="movieInfo">
+                  Directed by Gérald Hustache-Mathieu, Written by Gérald
+                  Hustache-Mathieu and Juliette Sales, based on a Novel by
+                  Adrian Finkelstein (2011)
+                </p>
+                <p id="pouPouSynopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A crime writer
+                  investigates the suicide of a model who believed she was the
+                  reincarnation of Marilyn Monroe.
+                </p>
+
+                <p id="" class=""></p>
+                <h2>A Promising Young Woman</h2>
+                <img
+                  id=" Img"
+                  class="movieImg"
+                  src="https://imagesyoulike.com/images/300000/32x24/360468.jpg"
+                />
+                <p id=" DirectorWriter" class="movieInfo">
+                  Directed and Written by Emerald Fennell (2020)
+                </p>
+                <p id=" Synopsis" class="movieSummary">
+                  One Sentence Synopsis Sans Spoilers: A 30-something, college
+                  drop-out fixated on exposing predatory sexual behavior and the
+                  hypocrasy it's cloaked in, exacts vigilante justice on the
+                  perpetrators of a horrible sex crime.
+                </p>
+
+                <p id="" class=""></p>
+                <h2>Candyman</h2>
+                <img
+                  id=" Img"
+                  class="movieImg"
+                  src="https://th.bing.com/th/id/OIP.BhBvkcbAkuoumDq6UfmuPQHaK_?w=186&h=276&c=7&r=0&o=5&pid=1.7"
+                />
+                <img
+                  id=" Img"
+                  class="movieImg"
+                  src="https://th.bing.com/th/id/OIP.NE8m9Io4fJYNdVe_f2cO2QHaKe?w=186&h=263&c=7&r=0&o=5&pid=1.7"
                 />
                 <p id=" DirectorWriter" class="movieInfo">
                   Directed and Written by Pedro Almodóvar (2006)
@@ -433,278 +391,327 @@
                 </p>
 
                 <p id="" class=""></p>
-                <h2>Fargo</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.hEFyOBvkordf7tFAmftkTgHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
+                <h3></h3>
                 <p id="" class=""></p>
-                <h2>The Thing</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://i.etsystatic.com/19389619/r/il/376fe7/3383532795/il_794xN.3383532795_of03.jpg"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>Jackie Brown</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.SzavLI76ZtfJVXYMKxBOQAHaJ4?w=186&h=248&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
+                <h3></h3>
                 <p id="" class=""></p>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card4" class="card">
-          <div class="card-header" id="headingFour">
-            <h5 class="mb-0">
-              <button
-                id="button4"
-                class="btn btn-link text-white"
-                data-toggle="collapse"
-                data-target="#collapseFour"
-                aria-expanded="true"
-                aria-controls="collapseFour"
-              >
-                Goof Level - 4
-              </button>
-            </h5>
-          </div>
-
-          <div
-            id="collapseFour"
-            class="collapse"
-            aria-labelledby="headingFour"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div id="goofLevel4Div" class="goofLevelDiv">
-                <h2>The Wolf of Snow Hollow</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.Ya2ahZKuRK5SbNIJ-Hg5-wHaK-?w=121&h=180&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>An American Werewolf in London</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.8NvVfUDoUGvJJKJlAs7TpAHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>Scotland, PA</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.0xSnbzJNm9m6BqXhTMbIhAHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>Nope</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://wallpapercave.com/wp/wp11424114.jpg"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>The Big Lebowski</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.Luktbquj0YBA2gHD8ryq2AHaKf?w=122&h=180&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>Burn After Reading</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.MXsa-msoYPjNpdEoRLCybgHaKD?w=186&h=253&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-              </div>
+        <div id="accordion">
+          <div id="card3" class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  id="button3"
+                  class="btn btn-link text-white"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  Goof Level - 3
+                </button>
+              </h5>
             </div>
-          </div>
-        </div>
 
-        <div id="card5" class="card">
-          <div class="card-header" id="headingFive">
-            <h5 class="mb-0">
-              <button
-                id="button5"
-                class="btn btn-link text-white"
-                data-toggle="collapse"
-                data-target="#collapseFive"
-                aria-expanded="true"
-                aria-controls="collapseFive"
-              >
-                Goof Level - 5
-              </button>
-            </h5>
-          </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div id="goofLevel3Div" class="goofLevelDiv">
+                  <h2>Teeth</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.B8UtGpqeSJNPptbPL-c8oAHaJ4?w=128&h=180&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary">
+                    One Sentence Synopsis Sans Spoilers:
+                  </p>
 
-          <div
-            id="collapseFive"
-            class="collapse"
-            aria-labelledby="headingFive"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div id="goofLevel5Div" class="goofLevelDiv">
-                <h2>Young Frankenstein</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.2EC8U3mPQGam17bOp2j_dwHaLH?w=121&h=182&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
+                  <p id="" class=""></p>
+                  <h2>Fargo</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.hEFyOBvkordf7tFAmftkTgHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
 
-                <p id="" class=""></p>
-                <h2>Hot Fuzz</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.Q1eosW-D58zRRKGvP7wMRwHaLH?w=124&h=186&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
+                  <p id="" class=""></p>
+                  <h2>The Thing</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://i.etsystatic.com/19389619/r/il/376fe7/3383532795/il_794xN.3383532795_of03.jpg"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
 
-                <p id="" class=""></p>
-                <h2>The 'Burbs</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.MSYJDvJXrRlijsf3lTGLFAHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
+                  <p id="" class=""></p>
+                  <h2>Jackie Brown</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.SzavLI76ZtfJVXYMKxBOQAHaJ4?w=186&h=248&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
 
-                <p id="" class=""></p>
-                <h2>The Addams' Family</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.9s5vlARDIGJ5u-6a0kyz-wHaJu?w=186&h=244&c=7&r=0&o=5&pid=1.7"
-                />
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.L-hkQOdpGz8whffMTMrz4QAAAA?w=186&h=278&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h3></h3>
-                <p id="" class=""></p>
-                <h3></h3>
-                <p id="" class=""></p>
-                <h2>Get Duked</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.l-1Dz5Dsug3cTqBjzG-rIwHaLH?w=181&h=272&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-                <h2>Crybaby</h2>
-                <img
-                  id=" Img"
-                  class="movieImg"
-                  src="https://th.bing.com/th/id/OIP.77CLz_P1eSpWGT2NS5_i_AHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
-                />
-                <p id=" DirectorWriter" class="movieInfo">
-                  Directed and Written by Pedro Almodóvar (2006)
-                </p>
-                <p id=" Synopsis" class="movieSummary"></p>
-
-                <p id="" class=""></p>
-
-                <p id="" class=""></p>
+                  <p id="" class=""></p>
+                </div>
               </div>
             </div>
           </div>
 
-          <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-          ></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-          ></script>
-          <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-          ></script>
+          <div id="card4" class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button
+                  id="button4"
+                  class="btn btn-link text-white"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  Goof Level - 4
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div id="goofLevel4Div" class="goofLevelDiv">
+                  <h2>The Wolf of Snow Hollow</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.Ya2ahZKuRK5SbNIJ-Hg5-wHaK-?w=121&h=180&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>An American Werewolf in London</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.8NvVfUDoUGvJJKJlAs7TpAHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>Scotland, PA</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.0xSnbzJNm9m6BqXhTMbIhAHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>Nope</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://wallpapercave.com/wp/wp11424114.jpg"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>The Big Lebowski</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.Luktbquj0YBA2gHD8ryq2AHaKf?w=122&h=180&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>Burn After Reading</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.MXsa-msoYPjNpdEoRLCybgHaKD?w=186&h=253&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="card5" class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button
+                  id="button5"
+                  class="btn btn-link text-white"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  Goof Level - 5
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div id="goofLevel5Div" class="goofLevelDiv">
+                  <h2>Young Frankenstein</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.2EC8U3mPQGam17bOp2j_dwHaLH?w=121&h=182&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>Hot Fuzz</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.Q1eosW-D58zRRKGvP7wMRwHaLH?w=124&h=186&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>The 'Burbs</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.MSYJDvJXrRlijsf3lTGLFAHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>The Addams' Family</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.9s5vlARDIGJ5u-6a0kyz-wHaJu?w=186&h=244&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.L-hkQOdpGz8whffMTMrz4QAAAA?w=186&h=278&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h3></h3>
+                  <p id="" class=""></p>
+                  <h3></h3>
+                  <p id="" class=""></p>
+                  <h2>Get Duked</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.l-1Dz5Dsug3cTqBjzG-rIwHaLH?w=181&h=272&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+                  <h2>Crybaby</h2>
+                  <img
+                    id=" Img"
+                    class="movieImg"
+                    src="https://th.bing.com/th/id/OIP.77CLz_P1eSpWGT2NS5_i_AHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
+                  />
+                  <p id=" DirectorWriter" class="movieInfo">
+                    Directed and Written by Pedro Almodóvar (2006)
+                  </p>
+                  <p id=" Synopsis" class="movieSummary"></p>
+
+                  <p id="" class=""></p>
+
+                  <p id="" class=""></p>
+                </div>
+              </div>
+            </div>
+
+            <script
+              src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+              crossorigin="anonymous"
+            ></script>
+            <script
+              src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"
+            ></script>
+            <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+              integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+              crossorigin="anonymous"
+            ></script>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
+    <footer id="footer">
       coded by Carol J. Pedersen<br />
       &copy2023
     </footer>
