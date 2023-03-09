@@ -17,6 +17,10 @@ footer {
   padding-top: 15%;
 }
 
+.funParagraph {
+  color: green;
+}
+
 .card,
 #card1 {
   width: 75%;
