@@ -48,6 +48,7 @@ footer {
   background-color: black;
   color: red;
   width: 30%;
+  border-radius: 30px;
   box-shadow: 10px 10px 24px 0px rgba(241, 232, 232, 0.75);
   -webkit-box-shadow: 10px 10px 24px 0px rgba(241, 232, 232, 0.75);
   -moz-box-shadow: 10px 10px 24px 0px rgba(241, 232, 232, 0.75);
