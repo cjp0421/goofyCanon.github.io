@@ -4,6 +4,11 @@ body {
   margin: 8px;
   display: block;
   height: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/13/18/29/curtain-938541__480.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 96vw 600px;
+  background-position-y: 13px;
 }
 
 p {
@@ -104,6 +109,7 @@ footer {
 
 #introductionParagraphs {
   border: 0.125rem dotted black;
+  background-color: whitesmoke;
   margin: 4%;
   margin-bottom: 4%;
   display: block;
